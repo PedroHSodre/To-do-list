@@ -12,9 +12,15 @@ function createTask(textInput) {
   const li = createLi();
   li.innerText = textInput;
   createdTasks.appendChild(li);
-  li.classList.add('li-theme')
+  li.classList.add('li-theme');
+  cleanInput();
   criaBotaoApagar(li);
   saveTasks();
+}
+
+function cleanInput() {
+  tasks.value = '';
+  tasks.focus();
 }
 
 function criaBotaoApagar(li) {
