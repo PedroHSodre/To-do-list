@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    position: relative;
+}
+
+input {
+    width: 100%;
+}
+
+label {
+    color: white;
+}
+
+ul, li, ol {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+.dark-theme {
+    background: hsl(235, 24%, 19%);
+}
+.light-theme {
+    background: hsl(236, 33%, 92%);
+}
+.dark-theme-li {
+    background: hsl(235, 19%, 35%);
+}
+.light-theme-li {
+    background: hsl(233, 11%, 84%);
+}
+
+.light-theme-li li {
+    color: black;
+}
+
+.header div img{
+    width: 100%;
+}
+
+.img-mobile img {
+    display: none;
+}
+
+.main-container {
+    margin: auto;
+    width: 45em;
+    padding: 1.5em;
+    position: absolute;
+    top: 3em;
+    left: 25%;
+}
+
+.main-container h1 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.main-container label {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.main-container input:focus {
+    outline: transparent;
+    border: solid 1px white;
+}
+
+.container-header {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 3em;
+    margin-bottom: 1em;
+}
+
+.send-task {
+    display: grid;
+    grid-template-columns: 1fr 3em;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.send-task input {
+    background: hsl(235, 19%, 35%);
+    border: hidden;
+    height: 4em;
+    color: white;
+    padding: .8em;
+}
+
+.send-task input:focus {
+    border: none;
+    outline: none;
+}
+
+#task {
+    height: 2.5em;
+}
+
+.main-tasks {
+    margin-top: 1em;
+    width: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+.main-tasks ul li {
+    padding: .8em 2em;
+    border-bottom: solid 1px grey;
+    width: 100%;
+    position: relative;
+}
+
+.task-button {
+    background-color: hsl(235, 19%, 35%);
+    padding: .5em;
+    color: white;
+    text-transform: uppercase;
+    border: transparent;
+    margin-left: .2em;
+    height: 2.6em;
+}
+
+.apagar {
+    background-color: hsl(236, 19%, 45%);
+    color: white;
+    text-align: right;
+    position: absolute;
+    right: 1em;
+    top: .5em;
+    padding: .5em;
+    border: transparent;
+    border-radius: 10px;
+}
+
+.disable {
+    display: none;
+    visibility: hidden;
+}
+
+
+@media screen and (max-width: 900px) 
+{
+    .main-container {
+        width: 90%;
+        top: 6.5em;
+        left: 1.6em;
+    }
+    .img-mobile img{
+        display: block;
+    }
+    .img-desktop {
+        display: none;
+    }
+
+    .disable {
+        display: none;
+        visibility: hidden;
+        position: absolute;
+    }
+}

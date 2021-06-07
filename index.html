@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>To-Do list</title>
+</head>
+
+<body id="body" class="dark-theme">
+    <header class="header">
+        <div class="img-mobile">
+            <div class="dark">
+                <img class="" src="/assets/img/bg-mobile-dark.jpg" alt="">
+            </div>
+            <div class="light disable">
+                <img class="" src="/assets/img/bg-mobile-light.jpg" alt="">
+            </div>
+        </div>
+        <div class="img-desktop">
+            <div class="dark-desktop">
+                <img class="" src="/assets/img/bg-desktop-dark.jpg" alt="disable">
+            </div>
+            <div class="light-desktop disable">
+                <img src="/assets/img/bg-desktop-light.jpg" alt="">
+            </div>
+        </div>
+    </header>
+    <main class="main-container">
+        <header class="container-header">
+            <h1>To do</h1>
+            <div class="change-theme">
+                <div class="change-theme-moon">
+                    <img id="" src="/assets/img/icon-moon.svg" alt="">
+                </div>
+                <div class="change-theme-sun disable">
+                    <img id="" src="/assets/img/icon-sun.svg" alt="" srcset="">
+                </div>
+            </div>
+        </header>
+        <div class="send-task">
+            <input type="text" name="task" id="task" placeholder="Create new task">
+            <button class="task-button">Add</button>
+        </div>
+        <div class="main-tasks">
+            <ul class="created-tasks dark-theme-li"></ul>
+        </div>
+    </main>
+
+    <script src="/assets/js/tasks.js"></script>
+    <script src="/assets/js/theme.js"></script>
+</body>
+
+</html>
