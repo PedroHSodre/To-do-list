@@ -54,9 +54,8 @@ ul, li, ol {
     margin: auto;
     width: 45em;
     padding: 1.5em;
-    position: absolute;
-    top: 3em;
-    left: 25%;
+    position: relative;
+    top: -15em;
 }
 
 .main-container h1 {
@@ -148,13 +147,33 @@ ul, li, ol {
     visibility: hidden;
 }
 
+.footer {
+    color: white;
+    bottom: 0;
+    width: 100%;
+    margin-top: 16em;
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgba(189, 78, 59, 0.925);
+}
+
+.footer a:hover {
+    color: rgb(216, 119, 102);
+}
+
+.footer div {
+    width: 100%;
+    text-align: center;
+}
+
 
 @media screen and (max-width: 900px) 
 {
     .main-container {
         width: 90%;
-        top: 6.5em;
-        left: 1.6em;
+        top: -8em;
     }
     .img-mobile img{
         display: block;
